@@ -20,7 +20,7 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "27342258"))
 API_HASH = environ.get("API_HASH", "df1d220364ecb7ac56d29152d194e14f")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8198025806:AAH3OIpsy2mrT5t5FJ39qVJc2-4suhFp1FQ")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8198025806:AAG5oo_zaue_y-9FFavQUuA2cWgKW9sehtE")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "10")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "600")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002622196743"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
